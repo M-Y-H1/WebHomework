@@ -1,0 +1,200 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 10px;
+}
+
+a{
+	text-decoration: none;
+}
+.clearfix::after{
+	content:"";
+	display: block;
+	clear: both;
+}
+.container{
+	width: 1800px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: .5rem;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: Montserrat;
+	font-weight: 700;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+	font-size: 1.6rem;
+	font-weight: 400;
+	line-height: 1.5;
+	background-color: #fff;
+}
+.text-uppercase {
+	text-transform: uppercase;
+}
+
+
+nav{
+	background-color: #2B3C52;
+	width: 100%;
+	padding-top: 2.9rem;
+	padding-bottom: 2.9rem;
+	font-family: Montserrat;
+	position: fixed;
+	z-index: 1000;
+}
+ul{
+	list-style-type: none;
+}
+.logo-area{
+	float: left;
+}
+
+#menu-area{
+	float: right;
+}
+
+
+.logo{
+	font-size: 3.2rem;
+	font-weight: 700;
+	color:  white;
+
+}
+ #menu-area li{
+ 	float: left;
+ 	margin: .4rem;
+ }
+ #menu-area a{
+ 	color: white;
+ 	font-size: 1.6rem;
+ 	font-weight: 700;
+ 	display: block;
+ 	padding: 1.6rem;
+	letter-spacing: .1rem 	
+ }
+
+  #menu-area a:hover{
+  	color:  #18bc9c;
+  }
+.header{
+	background-color:#18bc9c; 
+	padding-top: calc(120px + 10rem);
+	padding-bottom: calc(120px + 10rem);
+	text-align: center;
+}
+.header-image{
+	max-width: 100%;
+	height: auto;
+}
+.header-baslik{
+	font-size: 3.8rem;
+	color: white;
+}
+
+.star-light{
+	border: none;
+	border-top: .4rem solid #fff;
+	max-width: 25rem;
+    margin: 2.5rem auto;
+	overflow: visible;
+}
+
+.star-light::after{
+	content: "\f005";
+	font-family: "Font Awesome 5 Free" ;
+	color: #fff;
+	font-weight: 900;
+	padding: 0 10px;
+	font-size: 3.2rem;
+	position: relative;
+	top: -25px;
+	background-color: #18bc9c;
+	height: 0;
+
+}
+
+h2{
+	color: #fff;
+	font-size: 2.8rem;
+	font-family: 'Lato';
+	font-weight: 300;
+}
+
+#portfolio{
+	 height: 600px;
+	 padding-top: 10rem;
+	 padding-bottom: 10rem;
+	 text-align: center;
+}
+#portfolio h2{
+	color: #2c3e50;
+	font-size: 4.8rem;
+}
+
+.star-dark{
+	border: none;
+	border-top: .4rem solid #2c3e50;
+	max-width: 25rem;
+    margin: 2.5rem auto;
+	overflow: visible;
+}
+
+.star-dark::after{
+	content: "\f005";
+	font-family: "Font Awesome 5 Free" ;
+	color: #2c3e50;
+	font-weight: 900;
+	padding: 0 10px;
+	font-size: 3.2rem;
+	position: relative;
+	top: -25px;
+	background-color: #ffff;
+	height: 0;
+	text-align: center;
+
+}
+
+.colon{
+	float: left;
+	width: 33.33333%;
+	padding: 10px;
+
+}
+
+.portfolio-item{
+ position: relative;
+}
+
+
+
+.image-overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #18bc9c;
+	opacity: 0;
+	transition: 0.3s;
+
+}
+
+.icon{
+	color: #fff;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.portfolio-item:hover .image-overlay{
+	opacity: 0.9;
+
+}
